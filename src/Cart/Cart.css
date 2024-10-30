@@ -1,0 +1,33 @@
+/* Cart container styling */
+.cart-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  /* Cart item styling */
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-total {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

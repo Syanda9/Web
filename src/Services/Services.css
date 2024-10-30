@@ -1,0 +1,121 @@
+/* Container and title styles */
+.services-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .services-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Grid layout for services */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Service card styling */
+  .service-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image placeholder styling */
+  .service-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1; /* Ensures image is square */
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Service title styling */
+  .service-title {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Media Queries */
+  
+  /* Large screens (Desktops, 1024px and up) */
+  @media (min-width: 1024px) {
+    .services-title {
+      font-size: 28px;
+    }
+    
+    .service-card {
+      padding: 20px;
+    }
+  }
+  
+  /* Medium screens (Tablets, 768px to 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .services-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .services-title {
+      font-size: 26px;
+    }
+  
+    .service-card {
+      padding: 18px;
+    }
+  
+    .service-title {
+      font-size: 15px;
+    }
+  }
+  
+  /* Small screens (Small tablets and large phones, 480px to 767px) */
+  @media (min-width: 480px) and (max-width: 767px) {
+    .services-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+    }
+  
+    .services-title {
+      font-size: 22px;
+    }
+  
+    .service-card {
+      padding: 16px;
+    }
+  
+    .service-title {
+      font-size: 14px;
+    }
+  }
+  
+  /* Extra small screens (Phones, less than 480px) */
+  @media (max-width: 479px) {
+    .services-grid {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 10px;
+    }
+  
+    .services-title {
+      font-size: 20px;
+    }
+  
+    .service-card {
+      padding: 14px;
+    }
+  
+    .service-title {
+      font-size: 13px;
+    }
+  }
+  
