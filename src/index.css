@@ -5,6 +5,7 @@
 }
 body{
   min-width: 100vh;
+  overflow-x: hidden;
 }
 a{
   text-decoration: none;
@@ -13,6 +14,9 @@ a{
 .app{
   width: 80%;
   margin: auto;
+}
+html, body{
+  overflow-x: hidden;
 }
 
 @keyframes fadeIn{
