@@ -1,8 +1,14 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './NavBar.css'
 import Products from '../Products/Products';
 const Navbar =({onNavClick})=>{ 
-    
+    useEffect(() => {
+    document.body.style.overflowX = 'hidden';
+    return () => {
+      document.body.style.overflowX = 'auto'; // Clean up when the component unmounts
+    };
+  }, []);
+
   return (
     <div className="navbar">
           
