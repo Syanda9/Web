@@ -1,16 +1,14 @@
-.header{
-    height:50vw;
+
+/* Default styles for larger screens */
+.header {
+    height: 50vw;
     margin: 0;
     background: url('/main.jpg') no-repeat;
-    background-size: 100%;
+    background-size: cover;
     position: relative;
-} 
-/* Apply overflow-x hidden to the entire page */
-html, body {
-  overflow-x: hidden;
 }
 
-.header-contents{
+.header-contents {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -20,28 +18,85 @@ html, body {
     bottom: 10%;
     left: 6vw;
     animation: fadeIn 3s;
-    
 }
-.header-contents h2{
-    
+
+.header-contents h2 {
     font-weight: 500;
     color: blue;
-    font-size:max(4.5vw,22px);
+    font-size: max(4.5vw, 22px);
 }
-.header-contents p{
+
+.header-contents p {
     color: blue;
     font-size: 1vw;
 }
-.header-contents button{
+
+.header-contents button {
     border: none;
-    color:blue;
+    color: blue;
     font-weight: 500;
     padding: 1vw 2.3vw;
     background-color: rgb(255, 0, 0);
-    font-size: max(1vw,14px);
+    font-size: max(1vw, 14px);
     border-radius: 50px;
 }
-.header-contents button:hover{
-   background-color: green;
-   transform:scale(1.05);
+
+.header-contents button:hover {
+    background-color: green;
+    transform: scale(1.05);
+}
+
+/* Styles for medium-sized screens (tablets) */
+@media (max-width: 768px) {
+    .header {
+        height: 60vw;
+        background-size: cover;
+    }
+
+    .header-contents {
+        max-width: 70%;
+        left: 5vw;
+        gap: 2vw;
+    }
+
+    .header-contents h2 {
+        font-size: max(5vw, 18px);
+    }
+
+    .header-contents p {
+        font-size: 1.2vw;
+    }
+
+    .header-contents button {
+        padding: 1.5vw 3vw;
+        font-size: max(1.2vw, 12px);
+    }
+}
+
+/* Styles for small screens (mobile devices) */
+@media (max-width: 480px) {
+    .header {
+        height: 80vw;
+        background-size: cover;
+    }
+
+    .header-contents {
+        max-width: 90%;
+        left: 4vw;
+        gap: 3vw;
+        bottom: 8%;
+    }
+
+    .header-contents h2 {
+        font-size: max(6vw, 16px);
+    }
+
+    .header-contents p {
+        font-size: 2.5vw;
+    }
+
+    .header-contents button {
+        padding: 2vw 5vw;
+        font-size: max(2.5vw, 12px);
+    }
 }
