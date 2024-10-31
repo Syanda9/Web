@@ -3,7 +3,11 @@
     padding: 20px;
     text-align: center;
   }
-  
+  /* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
+
   .services-title {
     font-size: 24px;
     margin-bottom: 20px;
@@ -54,7 +58,11 @@
     .services-title {
       font-size: 28px;
     }
-    
+    /* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
+
     .service-card {
       padding: 20px;
     }
@@ -65,7 +73,11 @@
     .services-grid {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
-  
+  /* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
+
     .services-title {
       font-size: 26px;
     }
@@ -85,7 +97,11 @@
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 15px;
     }
-  
+  /* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
+
     .services-title {
       font-size: 22px;
     }
@@ -105,7 +121,11 @@
       grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
       gap: 10px;
     }
-  
+  /* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
+
     .services-title {
       font-size: 20px;
     }
