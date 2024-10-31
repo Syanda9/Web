@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import NavBar from './NavBar/NavBar'
 import Header from './Header/Header'
 import Contacts from './Contacts/Contacts'
@@ -9,6 +9,12 @@ import Services from './Services/Services'
 import Cart
  from './Cart/Cart'
 function App(){
+useEffect(() => {
+    document.body.style.overflowX = 'hidden';
+    return () => {
+      document.body.style.overflowX = 'auto'; // Clean up when the component unmounts
+    };
+  }, []);
 
   const [sections, setSections] = useState({
          products: true,
