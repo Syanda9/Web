@@ -5,6 +5,11 @@
     background-size: 100%;
     position: relative;
 } 
+/* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
+
 .header-contents{
     position: absolute;
     display: flex;
