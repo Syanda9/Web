@@ -4,6 +4,19 @@
   text-align: center;
 }
 
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Applies box-sizing to all elements */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 .products-title {
   font-size: 24px;
   margin-bottom: 20px;
@@ -15,6 +28,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted for wider cards */
   gap: 20px;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 /* Product card styling */
@@ -27,6 +44,7 @@
   text-align: center;
   width: 100%;
   aspect-ratio: 4 / 3; /* Sets a wider aspect ratio for a rectangular shape */
+  display: inline-block;
 }
 
 .product-card:hover {

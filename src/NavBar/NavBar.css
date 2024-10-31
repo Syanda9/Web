@@ -6,6 +6,7 @@
   background-color: #f0f0f0;
   padding: 10px 20px;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  overflow-x: hidden; /* Prevents overflow */
 }
 
 .navbar-left {
@@ -67,7 +68,6 @@
   .nav-link {
     font-size: 16px;
   }
-  
 }
 
 /* Medium screens (Tablets, 768px to 1023px) */
@@ -138,7 +138,6 @@
     flex: unset;
     text-align: center;
     width: 100%;
-    
   }
 
   .navbar-links-top {
@@ -159,12 +158,8 @@
     font-size: 12px;
   }
 
+  /* Hide search bar on small screens */
   .search-bar {
-    max-width: 100%;
-    padding: 3px;
-  }
-  .navbar-links-top {
-    gap: 3px;
+    display: none;
   }
 }
-
