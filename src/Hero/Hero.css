@@ -3,6 +3,10 @@
   background-color: #f8f8f8;
   padding: 20px;
 }
+/* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
 
 .nav-links {
   display: flex;
@@ -39,6 +43,10 @@
   .nav-links {
     display: none;
   }
+/* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
 
   .hamburger {
     display: block;
