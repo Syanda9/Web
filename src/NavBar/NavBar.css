@@ -7,6 +7,10 @@
   padding: 10px 20px;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
+/* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
 
 .navbar-left {
   flex: 1;
@@ -59,6 +63,10 @@
   .navbar {
     flex-direction: row;
   }
+/* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
 
   .navbar-center {
     flex: 3;
@@ -76,6 +84,10 @@
     flex-direction: row;
     overflow-x: hidden;
   }
+/* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
 
   .navbar-center {
     flex: 2;
@@ -121,6 +133,11 @@
   .navbar-links-top {
     gap: 3px;
   }
+/* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
+
 }
 
 /* Extra small screens (Phones, less than 480px) */
@@ -166,5 +183,10 @@
   .navbar-links-top {
     gap: 3px;
   }
+/* Apply overflow-x hidden to the entire page */
+html, body {
+  overflow-x: hidden;
+}
+
 }
 
