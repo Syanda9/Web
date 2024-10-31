@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Services.css';
 import SheaAvo from '../assets/SheaAvo.jpeg'
 import CAimage from '../assets/CAimages.jpeg'
@@ -16,6 +16,13 @@ import BODY from '../assets/BODYimages.jpeg'
 
 
 const Services = () => {
+useEffect(() => {
+    document.body.style.overflowX = 'hidden';
+    return () => {
+      document.body.style.overflowX = 'auto'; // Clean up when the component unmounts
+    };
+  }, []);
+
   const services = [
     { id: 1, title: "Seeds", image: seeds },
     { id: 2, title: "Seedling Production ", image: seedling },
