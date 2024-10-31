@@ -99,7 +99,7 @@ html, body {
   }
 
   .search-bar {
-    max-width: 150px;
+    max-width: 95%;
   }
   .navbar-links-top {
     gap: 3px;
