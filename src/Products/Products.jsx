@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Products.css';
 
 import body from '../assets/body.jpg'
@@ -16,6 +16,12 @@ const Products = ({ onAddToCart, onNavClick }) => {
     { id: 4, name: 'Raw Sha Butter', retailPrice: 100, wholesalePrice: 95, image: Pure2 },
     // Add more products as needed
   ];
+useEffect(() => {
+    document.body.style.overflowX = 'hidden';
+    return () => {
+      document.body.style.overflowX = 'auto'; // Clean up when the component unmounts
+    };
+  }, []);
 
   return (
     <div className="products-container">

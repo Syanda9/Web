@@ -1,7 +1,13 @@
-import React from "react";
+import React,{useEffect} from "react";
 import'./Header.css'
 
 const Header =({onNavClick}) =>{
+useEffect(() => {
+    document.body.style.overflowX = 'hidden';
+    return () => {
+      document.body.style.overflowX = 'auto'; // Clean up when the component unmounts
+    };
+  }, []);
 
  return(
     <div className='header' >

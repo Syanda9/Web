@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Hero.css';
 
 const Hero = () => {
@@ -7,6 +7,12 @@ const Hero = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+useEffect(() => {
+    document.body.style.overflowX = 'hidden';
+    return () => {
+      document.body.style.overflowX = 'auto'; // Clean up when the component unmounts
+    };
+  }, []);
 
   return (
     <div className="hero">
